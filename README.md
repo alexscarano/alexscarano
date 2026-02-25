@@ -65,7 +65,7 @@
   <img src="https://img.shields.io/badge/MariaDB-003545?style=flat-square&logo=mariadb&logoColor=white" />
 </div>
 
-## Estatísticas e Atividade
+***
 
 <div align="center">
   <img src="https://github-readme-streak-stats.herokuapp.com/?user=alexscarano&theme=tokyonight" />
