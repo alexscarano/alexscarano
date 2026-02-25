@@ -1,4 +1,4 @@
-<h1 align="center">Olá, eu sou Alex Scarano 👋</h1>
+<h1 align="center">Seja bem vindo !</h1>
 
 <p align="center">
   <em>Desenvolvedor Full Stack apaixonado por criar soluções robustas e escaláveis</em>
@@ -12,7 +12,7 @@
 
 ---
 
-## 👨‍💻 Sobre mim
+## Sobre mim
 
 Sou um desenvolvedor full stack com experiência em back-end e front-end, sempre buscando construir aplicações de alto desempenho e interfaces intuitivas. Tenho atuado em projetos que envolvem desde APIs RESTful e integrações de sistemas até automações de fluxo de trabalho e aplicações web modernas.
 
