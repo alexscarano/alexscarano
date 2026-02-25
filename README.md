@@ -1,15 +1,6 @@
 <h1 align="center">Alexandre Scarano | Fullstack Developer</h1>
 
-<p align="center">
-  Focado em arquitetura de sistemas escaláveis, performance de runtime e experiência do usuário.
-</p>
-
----
-* **Backend:** Construção de APIs resilientes e integração de serviços.
-* **Frontend:** Interfaces performáticas com foco em usabilidade e acessibilidade.
-* **Entrega:** Automação de fluxos e qualidade de código.
-
-## 🚀 Projetos em Destaque
+### 🚀  Projetos em Destaque 
 
 ### 🛡️ [HeimdallWeb](https://github.com/alexscarano/HeimdallWeb)
 > Plataforma de análise e auditoria de segurança web
@@ -72,4 +63,10 @@
   <img src="https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white" />
   <img src="https://img.shields.io/badge/Bootstrap-563D7C?style=flat-square&logo=bootstrap&logoColor=white" />
   <img src="https://img.shields.io/badge/MariaDB-003545?style=flat-square&logo=mariadb&logoColor=white" />
+</div>
+
+## Estatísticas e Atividade
+
+<div align="center">
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=alexscarano&theme=tokyonight" />
 </div>
