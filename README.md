@@ -1,10 +1,13 @@
-<h1 align="center">Olá, eu sou o Alex Scarano 👋</h1>
+<h1 align="center">Alexandre Scarano | Fullstack Developer</h1>
 
 <p align="center">
-  Desenvolvedor apaixonado por construir soluções full-stack robustas, seguras e bem arquitetadas.
+  Focado em arquitetura de sistemas escaláveis, performance de runtime e experiência do usuário.
 </p>
 
 ---
+* **Backend:** Construção de APIs resilientes e integração de serviços.
+* **Frontend:** Interfaces performáticas com foco em usabilidade e acessibilidade.
+* **Entrega:** Automação de fluxos e qualidade de código.
 
 ## 🚀 Projetos em Destaque
 
@@ -14,7 +17,7 @@
 **HeimdallWeb** é uma aplicação completa para identificar vulnerabilidades e auditar a segurança de sites e aplicações web. Construída com **.NET 10 Minimal APIs** no backend e **Next.js 15** no frontend, seguindo princípios de **DDD-Light** e **CQRS**.
 
 **O que ele faz:**
-- 🔍 **6 scanners especializados**: análise de cabeçalhos HTTP (CSP, HSTS, X-Frame-Options), validação de certificados SSL/TLS, varredura de 25 portas críticas, verificação de redirecionamentos HTTP→HTTPS, análise do `robots.txt` e detecção de mais de 35 arquivos e diretórios sensíveis (como `/.env`, `/.git`).
+- 🔍 ** Scanners especializados**: análise de cabeçalhos HTTP (CSP, HSTS, X-Frame-Options), validação de certificados SSL/TLS, varredura de 25 portas críticas, verificação de redirecionamentos HTTP→HTTPS, análise do `robots.txt` e detecção de mais de 35 arquivos e diretórios sensíveis (como `/.env`, `/.git`).
 - 🤖 **Análise com IA**: integração com **Google Gemini** para classificação automática de riscos, resumo executivo e recomendações de mitigação personalizadas.
 - 📊 **Dashboard administrativo**: métricas globais de uso, logs de auditoria filtráveis e gerenciamento de usuários.
 - 🔐 **Autenticação segura**: JWT armazenado em cookies `HttpOnly` e `Secure`, com sistema de roles (Usuário e Admin).
