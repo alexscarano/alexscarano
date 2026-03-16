@@ -58,7 +58,3 @@
 - 👤 **Gerenciamento de conta**: área do usuário para editar dados e visualizar quizzes salvos.
 
 ***
-
-<div align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=alexscarano&theme=tokyonight" />
-</div>
