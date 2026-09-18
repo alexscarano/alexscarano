@@ -1,60 +1,99 @@
-<h1 align="center">Alexandre Scarano | Fullstack Developer</h1>
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://shieldcn.dev/header/graph.svg?title=Alexandre%20Scarano&subtitle=Fullstack%20developer%20%C2%B7%20.NET%2C%20Next.js%20and%20React%20Native&theme=zinc&align=center&mode=dark" />
+    <img alt="Alexandre Scarano, fullstack developer" src="https://shieldcn.dev/header/graph.svg?title=Alexandre%20Scarano&subtitle=Fullstack%20developer%20%C2%B7%20.NET%2C%20Next.js%20and%20React%20Native&theme=zinc&align=center&mode=light" />
+  </picture>
+</p>
 
-### Projetos em Destaque 
+I build web and mobile apps. Most of my backend work is .NET, and the front end is usually Next.js or React Native. Lately I've been spending my time on web security tooling: you point a scanner at a site and it tells you what's wrong with it, in words a person can actually act on.
+
+I finished my Systems Analysis and Development degree at FATEC - SP in 2026.
+
+## Projects
 
 ### [HeimdallWeb](https://heimdall.warphsolutions.cloud)
-> Plataforma de análise e auditoria de segurança web
 
-**HeimdallWeb** é uma aplicação completa para identificar vulnerabilidades e auditar a segurança de sites e aplicações web. Construída com **.NET 10 Minimal APIs** no backend e **Next.js 15** no frontend, seguindo princípios de **DDD-Light** e **CQRS**.
+A security scanner for websites. Give it a URL and it checks:
 
-**O que ele faz:**
-- ** Scanners especializados**: análise de cabeçalhos HTTP (CSP, HSTS, X-Frame-Options), validação de certificados SSL/TLS, varredura de 25 portas críticas, verificação de redirecionamentos HTTP→HTTPS, análise do `robots.txt` e detecção de mais de 35 arquivos e diretórios sensíveis (como `/.env`, `/.git`).
-- **Análise com IA**: integração com **Google Gemini** para classificação automática de riscos, resumo executivo e recomendações de mitigação personalizadas.
-- **Dashboard administrativo**: métricas globais de uso, logs de auditoria filtráveis e gerenciamento de usuários.
-- **Autenticação segura**: JWT armazenado em cookies `HttpOnly` e `Secure`, com sistema de roles (Usuário e Admin).
+- HTTP security headers (CSP, HSTS, X-Frame-Options)
+- the SSL/TLS certificate
+- 25 ports that tend to be left open
+- whether HTTP actually redirects to HTTPS
+- what `robots.txt` gives away
+- around 35 files and folders that should never be public, like `/.env` and `/.git`
 
-<div>
-  <img src="https://img.shields.io/badge/.NET%2010-512BD4?style=flat-square&logo=dotnet&logoColor=white" />
-  <img src="https://img.shields.io/badge/Next.js%2015-000000?style=flat-square&logo=nextdotjs" />
-  <img src="https://img.shields.io/badge/PostgreSQL%2016-336791?style=flat-square&logo=postgresql&logoColor=white" />
-  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" />
-  <img src="https://img.shields.io/badge/Tailwind%20CSS-38B2AC?style=flat-square&logo=tailwind-css&logoColor=white" />
-</div>
+Raw scanner output is hard to read, so Google Gemini turns the findings into a risk rating, a short summary and specific things to fix. The admin side has usage metrics, filterable audit logs and user management. Sessions use JWT stored in `HttpOnly` `Secure` cookies, with separate user and admin roles.
 
----
+The backend is .NET 10 Minimal APIs with DDD-Light and CQRS. The front end is Next.js 15.
+
+<p>
+  <img alt=".NET 10" src="https://shieldcn.dev/badge/.NET_10.svg?variant=secondary&theme=zinc&logo=dotnet" />
+  <img alt="Next.js 15" src="https://shieldcn.dev/badge/Next.js_15.svg?variant=secondary&theme=zinc&logo=nextdotjs" />
+  <img alt="PostgreSQL 16" src="https://shieldcn.dev/badge/PostgreSQL_16.svg?variant=secondary&theme=zinc&logo=postgresql" />
+  <img alt="TypeScript" src="https://shieldcn.dev/badge/TypeScript.svg?variant=secondary&theme=zinc&logo=typescript" />
+  <img alt="Tailwind CSS" src="https://shieldcn.dev/badge/Tailwind_CSS.svg?variant=secondary&theme=zinc&logo=tailwindcss" />
+  <img alt="Google Gemini" src="https://shieldcn.dev/badge/Gemini.svg?variant=secondary&theme=zinc&logo=googlegemini" />
+</p>
 
 ### [QrLinkki](https://github.com/alexscarano/QrLinkki)
-> Plataforma mobile de encurtamento de URLs e geração de QR Codes
 
-**QrLinkki** é um projeto full-stack para criar, gerenciar e rastrear QR codes e links encurtados, com foco em uma experiência nativa para **Android**. O backend segue **Clean Architecture** e **DDD**, enquanto o app mobile foi construído com **React Native + Expo**.
+Short links and QR codes, with an Android app on top. You shorten a URL (custom code if you want one), generate a QR from it, and then watch the click count go up. The app scans codes with the camera and caches your links locally, so the dashboard still opens when the connection drops. Login persists through Expo SecureStore.
 
-**O que ele faz:**
-- **Encurtamento de URLs**: gere links curtos e memoráveis com códigos personalizáveis.
-- **QR Codes dinâmicos**: crie QR codes a partir de qualquer URL e escaneie com câmera integrada no app.
-- **Rastreamento de cliques**: visualize em tempo real quantos acessos seus links tiveram.
-- **App Android nativo**: dashboard completo para gerenciar todos os seus links, com suporte offline via cache local.
-- **Autenticação JWT**: sessão persistente com armazenamento seguro via Expo SecureStore.
+The API follows Clean Architecture and DDD. The app is React Native with Expo.
 
-<div>
-  <img src="https://img.shields.io/badge/.NET%208-512BD4?style=flat-square&logo=dotnet&logoColor=white" />
-  <img src="https://img.shields.io/badge/React%20Native-61DAFB?style=flat-square&logo=react&logoColor=black" />
-  <img src="https://img.shields.io/badge/Expo-000020?style=flat-square&logo=expo&logoColor=white" />
-  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" />
-  <img src="https://img.shields.io/badge/SQLite-003B57?style=flat-square&logo=sqlite&logoColor=white" />
-</div>
-
----
+<p>
+  <img alt=".NET 8" src="https://shieldcn.dev/badge/.NET_8.svg?variant=secondary&theme=zinc&logo=dotnet" />
+  <img alt="React Native" src="https://shieldcn.dev/badge/React_Native.svg?variant=secondary&theme=zinc&logo=react" />
+  <img alt="Expo" src="https://shieldcn.dev/badge/Expo.svg?variant=secondary&theme=zinc&logo=expo" />
+  <img alt="TypeScript" src="https://shieldcn.dev/badge/TypeScript.svg?variant=secondary&theme=zinc&logo=typescript" />
+  <img alt="SQLite" src="https://shieldcn.dev/badge/SQLite.svg?variant=secondary&theme=zinc&logo=sqlite" />
+  <img alt="Docker" src="https://shieldcn.dev/badge/Docker.svg?variant=secondary&theme=zinc&logo=docker" />
+</p>
 
 ### [QuizForge](https://github.com/alexscarano/QuizForge)
-> Gerador de quizzes e avaliações com Inteligência Artificial
 
-**QuizForge** é uma aplicação web que permite a qualquer usuário cadastrado gerar questionários completos a partir de um simples prompt de texto, usando a **API do Google Gemini** para criar as perguntas automaticamente. Projeto desenvolvido na disciplina de **POO** na Fatec Praia Grande.
+Write a prompt, get a quiz. You describe the topic, Gemini writes the questions, and the app grades your answers as soon as you finish. Quizzes can be saved for later or exported to PDF with iText. There's a small account area for editing your data and finding what you saved.
 
-**O que ele faz:**
-- **Geração de quizzes via IA**: o usuário descreve o tema e o Gemini gera um questionário completo e estruturado.
-- **Correção automática**: visualize o resultado do quiz ao terminar de responder.
-- **Salvar e consultar**: salve seus questionários favoritos e acesse-os a qualquer momento.
-- **Exportar como PDF**: baixe o quiz gerado em PDF para uso offline.
-- **Gerenciamento de conta**: área do usuário para editar dados e visualizar quizzes salvos.
+Built for the OOP course at FATEC - SP, with Java servlets and JSP.
 
-***
+<p>
+  <img alt="Java" src="https://shieldcn.dev/badge/Java.svg?variant=secondary&theme=zinc&logo=openjdk" />
+  <img alt="JSP and Servlets" src="https://shieldcn.dev/badge/JSP_%2B_Servlets.svg?variant=secondary&theme=zinc&logo=apachetomcat" />
+  <img alt="MySQL" src="https://shieldcn.dev/badge/MySQL.svg?variant=secondary&theme=zinc&logo=mysql" />
+  <img alt="iText 7" src="https://shieldcn.dev/badge/iText_7.svg?variant=secondary&theme=zinc" />
+  <img alt="Google Gemini" src="https://shieldcn.dev/badge/Gemini.svg?variant=secondary&theme=zinc&logo=googlegemini" />
+</p>
+
+## Stack
+
+What I reach for day to day.
+
+<p>
+  <img alt=".NET" src="https://shieldcn.dev/badge/.NET.svg?variant=secondary&theme=zinc&logo=dotnet" />
+  <img alt="Java" src="https://shieldcn.dev/badge/Java.svg?variant=secondary&theme=zinc&logo=openjdk" />
+  <img alt="TypeScript" src="https://shieldcn.dev/badge/TypeScript.svg?variant=secondary&theme=zinc&logo=typescript" />
+  <img alt="JavaScript" src="https://shieldcn.dev/badge/JavaScript.svg?variant=secondary&theme=zinc&logo=javascript" />
+</p>
+
+<p>
+  <img alt="Next.js" src="https://shieldcn.dev/badge/Next.js.svg?variant=secondary&theme=zinc&logo=nextdotjs" />
+  <img alt="React" src="https://shieldcn.dev/badge/React.svg?variant=secondary&theme=zinc&logo=react" />
+  <img alt="React Native" src="https://shieldcn.dev/badge/React_Native.svg?variant=secondary&theme=zinc&logo=expo" />
+  <img alt="Tailwind CSS" src="https://shieldcn.dev/badge/Tailwind_CSS.svg?variant=secondary&theme=zinc&logo=tailwindcss" />
+</p>
+
+<p>
+  <img alt="PostgreSQL" src="https://shieldcn.dev/badge/PostgreSQL.svg?variant=secondary&theme=zinc&logo=postgresql" />
+  <img alt="MySQL" src="https://shieldcn.dev/badge/MySQL.svg?variant=secondary&theme=zinc&logo=mysql" />
+  <img alt="SQLite" src="https://shieldcn.dev/badge/SQLite.svg?variant=secondary&theme=zinc&logo=sqlite" />
+  <img alt="Docker" src="https://shieldcn.dev/badge/Docker.svg?variant=secondary&theme=zinc&logo=docker" />
+  <img alt="Git" src="https://shieldcn.dev/badge/Git.svg?variant=secondary&theme=zinc&logo=git" />
+</p>
+
+## Where to find me
+
+<p>
+  <a href="https://portfolio.warphsolutions.cloud/"><img alt="Portfolio" src="https://shieldcn.dev/badge/portfolio.warphsolutions.cloud.svg?variant=secondary&theme=zinc&logo=googlechrome" /></a>
+  <a href="https://www.linkedin.com/in/alexandre-scarano/"><img alt="LinkedIn" src="https://shieldcn.dev/badge/LinkedIn.svg?variant=secondary&theme=zinc" /></a>
+  <a href="https://heimdall.warphsolutions.cloud"><img alt="HeimdallWeb" src="https://shieldcn.dev/badge/heimdall.warphsolutions.cloud.svg?variant=secondary&theme=zinc" /></a>
+</p>
